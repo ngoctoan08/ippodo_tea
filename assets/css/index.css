@@ -12,198 +12,6 @@
     --color-text-header: #1e1000b0;
 }
 
-/* begin header */
-
-.header {
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-        /* header-top */
-.header-top {
-    width: 100%;
-    height: 32px;
-    background-color: var(--color-header-top);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.header-top-inner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.text-header-top {
-    color: #000;
-    margin-right: 10px;
-}
-.header-top-link a{
-    color: var(--color-more);
-    text-decoration: none;
-}
-
-        /* header-main */
-.header-main-over, .header-main-under {
-    width: 100%;
-    height: auto;
-    background-color: var(--color-primary);
-    border-bottom: 1px solid #E6E4DF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-/* header-main-over */
-.heaer-main-center {
-    display: flex;
-    justify-content: center;
-    
-}
-.header-main-inner {
-    display: flex;
-}
-.main-inner-left, .main-inner-right {
-    display: flex;
-}
-.main-inner-left {
-    margin-right: auto;
-}
-.main-inner-right {
-    margin-left: auto;
-}
-/* logo */
-.header-logo {
-    position: relative;
-    display: grid;
-    place-items: center;
-}
-.header-logo a svg {
-    height: 40px;
-    margin-right: 10px;
-    margin-top: 4px;
-}
-
-/* search */
-.header-search-button {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.header-search {
-    display: flex;
-}
-.header-search> form> input[type="search"] {
-    width: 500px;
-    display: flex;
-    border-radius: 30px;
-    border: 1px solid #1e10002e;
-    outline: none;
-    padding: 10px 20px;
-    max-width: 1200px;
-    margin: 0px 10px;
-    
-}
-
-/* navigator */
-.header-navigator-over {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-}
-.header-navigator-over .menu {
-    padding: 0;
-    margin: 0;
-}
-.header-navigator-over .menu li {
-    position: relative;
-    display: inline-block;
-    list-style: none;
-}
-.header-navigator-over .menu li a{
-    display: inline-flex;
-    flex-direction: column;
-    padding: 8px 10px;
-    color: var(--clr-black-69);
-    text-decoration: none;
-    color: #1e1000b0;
-}
-
-
-.header-sp-ac {
-    position: relative;
-    display: flex;
-    margin-right: 15px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-/* shopping */
-.icon-shopping {
-    background: none;
-    border: none;
-    outline-color: transparent;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-.text-shopping {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 3px;
-    right: -3px;
-    line-height: 15px;
-    text-align: center;
-    border: 1px solid red;
-    background-color: red;
-    color: #fff;
-    border-radius: 50%;
-}
-
-.icon {
-    color: var(--color-text-header);
-}
-
-.text-header-color {
-    color: var(--color-text-header);
-}
-
-/* .header-main-under */
-.header-main-under {
-    height: 47px;
-}
-.header-main-under .menu-button {
-    padding: 0;
-    margin: 0;
-}
-.header-main-under .menu-button > li {
-    position: relative;
-    display: inline-block;
-    list-style: none;
-    margin: 0px;
-}
-.header-main-under .menu-button > li > a {
-    color: #1e1000b0;
-    text-decoration: none;
-    padding: 7px 15px;
-    display: inline-flex;
-    flex-direction: column;
-}
-.header-main-under .menu-button > li > a:hover {
-    color: #1e1000;
-    transform: scale(1.2);
-}
-/* end header */
-
-
-/* begin body */
 .text-center{
     text-align: center;
 }
@@ -218,6 +26,22 @@
 .clear{
     clear: both;
 }
+
+.contact-chat{
+    display: inline-block;
+    padding: 12px 26px;
+    background-color: #816a6a;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 18px;
+    right: 24px;
+}
+
+/* begin body */
+
 
 .banner{
     display: flex;
@@ -445,3 +269,4 @@
     font-size: 15px;
     margin: 16px 0 ;
 }
+

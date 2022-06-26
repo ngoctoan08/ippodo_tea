@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+h1 {
+    /* font-family: Lato, sans-serif; */
+}
+
+h2 {
+    /* font-family: Lato, sans-serif; */
+}
+
+#header_banner{
+    display: flex;
+    justify-content: center;
+    background: #131810;
+    width: 100%;
+    align-items: center;
+}
+
+.main_content #frm_checkout {
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+.main_content .content2 {
+    background-color: #f6ebd5;
+    text-align: center;
+    padding: 15px !important;
+    border: none !important;
+    line-height: 1.6;
+}
+
+.main{
+    background-color: #fffefa;
+    display: flex;
+    width: 1252px;
+    height: 1070px;
+    margin: 0px 218px;
+
+}
+
+.main_content{
+    max-width: 700px;
+    height: 1070px;
+    padding: 56px;
+    background-color: #fafafa;
+    font-size: 14px;
+    margin: 0 auto;
+    display: inline;
+}
+
+.policy-list_item {
+    float: left;
+    margin: 5px;
+}
+
+.content{
+    display: flex;
+    max-width: 1688px;
+    height: 1070px;
+    background: #fffefa;
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+input{
+    border: 1px solid #ececec;
+    padding: 15px 10px;
+}
+
+.ctn-shopping{
+    margin-left: 301px;
+    padding: 15px 8px;
+    border: 1px solid #1e1000;
+    background: #1e1000;
+    color: #fffefa;
+    outline: none !important;
+    border-radius: 56px !important;
+    font-size: 16px;
+    font-weight: bold;
+    float: right;
+}
+
+.ctn-shopping:hover{
+    color: #1e1000;
+    background-color: #fff;
+
+}
+
+select{
+    border: 1px solid #1e1000;
+    padding: 15px 10px;
+    justify-content: center;
+    align-items: center;
+}
+#frm_checkout .email{
+    width: 100%;
+}
+
+#email_email{
+    font-size: 18px;
+}
+
+#frm_checkout .name_company , .first_name{
+    width: 275px;
+    height: 48px;
+    margin-right: 17px;
+}
+
+#frm_checkout .address , .last_name{
+    width: 275px;
+    height: 48px;
+    margin-left: 17px;
+}
+#frm_checkout .apartment , .city{
+    width: 100%;
+}
+#frm_checkout .phone {
+    width: 100%;
+}
+#frm_checkout .zip_code {
+    width: 198px;
+}
+
+#frm_checkout .previous_link{
+    font-size: 16px;
+}
