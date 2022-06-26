@@ -400,9 +400,6 @@
     z-index: 1;
 }
 
-.user-account-bg.open{
-    display: flex;
-}
 
 .user-account{
     width: 250px;

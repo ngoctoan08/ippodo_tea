@@ -322,7 +322,7 @@
                                 </div>
     
                                 <div class="account header-sp-ac" >
-                                    <p class="js-clickAccount" style="text-decoration: none;" onclick="displayLogin()">
+                                    <p class="clickAccount" style="text-decoration: none;">
                                         <span class="icon icon account">
                                             <i class="fa-regular fa-user"></i>
                                         </span>
@@ -866,21 +866,32 @@
             </div>
          </div>
         <!-- end account -->
-    
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
         <script>
-            const clickAccount = document.querySelector(".js-clickAccount");
-            const loginAccount = document.querySelector(".user-account-bg");
-    
-            function displayLogin(){
-                loginAccount.classList.add("open");
-            }
-    
-            function hideLogin(){
-                loginAccount.classList.remove("open");
-            }
-    
-            loginAccount.addEventListener("click", hideLogin);
-            // clickAccount.addEventListener("click",hideLogin);
+            $(document).ready(function() {
+            $(".clickAccount").click(function() {
+                let value = $(".user-account-bg").css("display");
+                console.log(value);
+                if(value == "none"){
+                    $(".user-account-bg").css({
+                        'display' : 'flex'
+                    })
+                } else {
+                    $(".user-account-bg").css({
+                        'display' : 'none'
+                    })
+                }
+            })
+
+            $(".user-account-bg").click(function() {
+                $(".user-account-bg").hide();
+
+                $(".user-account").click(function(event) {
+                    event.stopPropagation();
+                })
+            })
+        })
         </script>
 
 </body>
