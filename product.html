@@ -803,7 +803,7 @@
                                 <div class="footer-menu colum">
                                     <h5 class="heading-footer">Account</h5>
                                     <a href="#">Login</a>
-                                    <a href="#">Register</a>
+                                    <a href="register.html">Register</a>
                                 </div>
                                 <div class="footer-menu colum">
                                     <h5 class="heading-footer">Shopping Guide</h5>
@@ -859,7 +859,7 @@
                 <a href="#" class="login">
                     Login
                 </a>
-                <a href="#" class="register">
+                <a href="register.html" class="register">
                     Register
                 </a>
     
@@ -867,32 +867,7 @@
          </div>
         <!-- end account -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-        <script>
-            $(document).ready(function() {
-            $(".clickAccount").click(function() {
-                let value = $(".user-account-bg").css("display");
-                console.log(value);
-                if(value == "none"){
-                    $(".user-account-bg").css({
-                        'display' : 'flex'
-                    })
-                } else {
-                    $(".user-account-bg").css({
-                        'display' : 'none'
-                    })
-                }
-            })
-
-            $(".user-account-bg").click(function() {
-                $(".user-account-bg").hide();
-
-                $(".user-account").click(function(event) {
-                    event.stopPropagation();
-                })
-            })
-        })
-        </script>
+         <script src="./assets/js/header-footer.js"></script>
 
 </body>
 </html>

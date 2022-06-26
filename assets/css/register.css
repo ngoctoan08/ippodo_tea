@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+:root {
+    --color-primary: #FFFEFA;
+    --color-header-top: #FCF7ED;
+    --color-more: #C09E5C;
+    --color-border-search: #1e10002e;
+    --color-text-header: #1e1000b0;
+}
+
+
+.text-center{
+    text-align: center;
+}
+.item-center{
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.clear{
+    clear: both;
+}
+
+.main-register {
+    padding: 20px;
+    margin: 182px auto 30px;
+    width: 600px;
+}
+
+
+.register-container {
+    display: block;
+}
+
+.register-container .register-title {
+    font-size: 36px;
+
+}
+
+.register-container .register-title,
+.register-container .sign-up {
+    text-align: center;
+}
+
+.register-container .sign-up {
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 11px 20px;
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+}
+
+.register-container .sign-up:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.register-container .sign-up img {
+    margin-right: 8px;
+}
+
+.register-container .register-or {
+    align-items: center;
+    padding: 13px 0px;
+}
+
+.register-container .register-or::before {
+    flex: 1;
+    height: 1px;
+    margin: 0 1em;
+    content: "";
+    background-color: #000000;
+}
+
+.register-container .register-or::after {
+    flex: 1;
+    height: 1px;
+    margin: 0 1em;
+    content: "";
+    background-color: #000000;
+}
+
+.register-container .type-info {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 11px 20px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    margin: 15px 0;
+}
+
+.register-container #create-ac {
+    width: 100%;
+    border-radius: 20px;
+    padding: 11px 20px;
+    font-size: 14px;
+    margin: 15px 0;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.register-container #create-ac:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+
