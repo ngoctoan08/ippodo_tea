@@ -837,7 +837,7 @@
                     <div class="footer-inner footer-link">
                         <div class="footer-menu colum">
                             <h5 class="heading-footer">Account</h5>
-                            <a href="#">Login</a>
+                            <a href="login.html">Login</a>
                             <a href="register.html">Register</a>
                         </div>
                         <div class="footer-menu colum">
@@ -893,7 +893,7 @@
                 </a>
                 <div class="clear"></div>
             </div>
-            <a href="#" class="login">
+            <a href="login.html" class="login">
                 Login
             </a>
             <a href="register.html" class="register">
@@ -906,5 +906,10 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/header-footer.js"></script>
+    <script>
+        if (!localStorage.getItem("users")) {
+            location.href = "admin.html"
+        }
+    </script>
 </body>
 </html>

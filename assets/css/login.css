@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+:root {
+    --color-primary: #FFFEFA;
+    --color-header-top: #FCF7ED;
+    --color-more: #C09E5C;
+    --color-border-search: #1e10002e;
+    --color-text-header: #1e1000b0;
+}
+
+
+.text-center{
+    text-align: center;
+}
+.item-center{
+    align-items: center;
+}
+
+.flex{
+    display: flex;
+}
+
+.clear{
+    clear: both;
+}
+
+.main-login {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-login-left {
+    padding: 20px;
+    width: 600px;
+    margin-left: 10px;
+
+}
+
+.main-login-right {
+    padding: 20px;
+    width: 600px;
+    margin-left: 10px;
+}
+
+#forgot_password {
+    color: #1e1000;
+}
+
+.login-container {
+    display: block;
+}
+
+.login-container .login-title {
+    font-size: 36px;
+
+}
+
+.login-container .login-title,
+.login-container .sign-up {
+    text-align: center;
+}
+
+.login-container .sign-up {
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 11px 20px;
+    margin: 20px 0;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    text-decoration: none;
+}
+
+.login-container .sign-up:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.login-container .sign-up img {
+    margin-right: 8px;
+}
+
+.login-container .login-or {
+    align-items: center;
+    padding: 13px 0px;
+}
+
+.login-container .login-or::before {
+    flex: 1;
+    height: 1px;
+    margin: 0 1em;
+    content: "";
+    background-color: #000000;
+}
+
+.login-container .login-or::after {
+    flex: 1;
+    height: 1px;
+    margin: 0 1em;
+    content: "";
+    background-color: #000000;
+}
+
+.login-container .type-info {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 11px 20px;
+    border: none;
+    outline: none;
+    background-color: #eee;
+    margin: 15px 0;
+}
+
+.login-container #login-ac {
+    width: 100%;
+    border-radius: 20px;
+    padding: 11px 20px;
+    font-size: 14px;
+    margin: 15px 0;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.login-container #login-ac:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}

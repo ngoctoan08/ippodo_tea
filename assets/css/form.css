@@ -5,19 +5,23 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
-    color: #000;
+.contact-chat{
+    display: inline-block;
+    padding: 12px 26px;
+    background-color: #816a6a;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    font-size: 20px;
+    position: fixed;
+    bottom: 18px;
+    right: 24px;
+    cursor: pointer;
 }
 
-h1 {
-    /* font-family: Lato, sans-serif; */
+.title {
+    font-family: Lato, sans-serif;
 }
-
-h2 {
-    /* font-family: Lato, sans-serif; */
-}
-
 #header_banner{
     display: flex;
     justify-content: center;
@@ -25,11 +29,9 @@ h2 {
     width: 100%;
     align-items: center;
 }
-
 .main_content #frm_checkout {
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 .main_content .content2 {
     background-color: #f6ebd5;
     text-align: center;
@@ -37,16 +39,14 @@ h2 {
     border: none !important;
     line-height: 1.6;
 }
-
 .main{
     background-color: #fffefa;
     display: flex;
     width: 1252px;
     height: 1070px;
-    margin: 0px 218px;
+    margin: 0px auto;
 
 }
-
 .main_content{
     max-width: 700px;
     height: 1070px;
@@ -56,7 +56,6 @@ h2 {
     margin: 0 auto;
     display: inline;
 }
-
 .policy-list_item {
     float: left;
     margin: 5px;
@@ -67,33 +66,39 @@ h2 {
     max-width: 1688px;
     height: 1070px;
     background: #fffefa;
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 input{
     border: 1px solid #ececec;
     padding: 15px 10px;
 }
 
-.ctn-shopping{
-    margin-left: 301px;
-    padding: 15px 8px;
+.step-footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.previous_link {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.btn-continue{
+    float: right;
+    padding: 17px 10px;
     border: 1px solid #1e1000;
     background: #1e1000;
     color: #fffefa;
     outline: none !important;
+    justify-content: center;
+    align-items: center;
     border-radius: 56px !important;
     font-size: 16px;
-    font-weight: bold;
-    float: right;
 }
-
-.ctn-shopping:hover{
-    color: #1e1000;
-    background-color: #fff;
-
+.btn-continue:hover {
+    background-color: rgb(197, 197, 168);
+    color: #000;
 }
-
 select{
     border: 1px solid #1e1000;
     padding: 15px 10px;

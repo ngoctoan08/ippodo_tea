@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/form.css">
-    <title>Ippodo_tea</title>
+    <title>Form</title>
 </head>
 <body>
+    <div class="contact-chat">
+        <i class="fa-brands fa-rocketchat"></i>
+        Chat
+    </div>
         <!--Start header-->
         <div id="header_banner">
                 <a href="#">
@@ -16,19 +20,22 @@
         </div>
         <div class="content">
                 <div class="main">
+                    <div>
+                        
+                    </div>
                     <div class="main_content">
                         <form action="" method="" id="frm_checkout" class="frm_checkout" enctype="multipart/form-data">
                             
-                            <h1>Contact information</h1>
+                            <h1 class="title">Contact information</h1>
                             <br><br>
                             <label for="email" id="email_email">Email</label>
-                            <input type="text" name="email" id="email" class="email">
+                            <input type="email" name="email" id="email" class="email" placeholder="Please write your email" required>
                             <br> 
                             <br>
                             <input type="checkbox" name=""> Email me with news and offer
                             <br><br>
                             
-                            <h2>Shipping adress</h2>
+                            <h2 class="title">Shipping adress</h2>
                             <br>
                             <div class="content2">
                                 <b>Please carefully check the shipping address.</b>
@@ -50,7 +57,7 @@
                             <br><br>
         
                             <label for="country">Country/region</label>
-                            <select size="1" name="country" id="country" class="country">
+                            <select size="1" name="country" id="country" class="country" >
                                 <option value="United States">United States</option>
                                 <option value="Canada">Canada</option>
                                 <option value="Viet Nam">Viet Nam</option>
@@ -85,14 +92,21 @@
                             <input type="text" name="zip_code" id="zip_code" class="zip_code" placeholder="ZIP code">
                             <br><br>
         
-                            <input type="text" name="phone" id="phone" class="phone" placeholder="Phone">
+                            <input type="number" name="phone" id="phone" class="phone" placeholder="Phone">
+                            <div>
+                                <button>
+                                    <i class="fa-regular fa-circle-question"></i>
+                                </button>
+                            </div>
                             <br><br>
-        
-                            <a class="previous_link" href="">
-                                <span class="pervious_link">&lt;Return to bag</span>
-                            </a>
-
-                            <a href="#" class="ctn-shopping" type="submit">Continue to shipping</a>
+                            
+                            <div class="step-footer">
+                                <a class="previous_link" href="index.html">
+                                    <span class="pervious_link">&lt;Return to home</span>
+                                </a>
+    
+                                <button type="submit" onclick="getvalue();" class="btn-continue">Continue to shipping</button>
+                            </div>
                         </form>
                         <br><br><br>
                         <hr>
@@ -106,7 +120,6 @@
         
                     </div>
         
-
             </div>
 
         </div>

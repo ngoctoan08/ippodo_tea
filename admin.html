@@ -828,8 +828,8 @@
                     <div class="footer-inner footer-link">
                         <div class="footer-menu colum">
                             <h5 class="heading-footer">Account</h5>
-                            <a href="#">Login</a>
-                            <a href="#">Register</a>
+                            <a href="login.html">Login</a>
+                            <a href="register.html">Register</a>
                         </div>
                         <div class="footer-menu colum">
                             <h5 class="heading-footer">Shopping Guide</h5>
@@ -884,7 +884,7 @@
                 </a>
                 <div class="clear"></div>
             </div>
-            <a href="#" class="login">
+            <a href="login.html" class="login">
                 Login
             </a>
             <a href="register.html" class="register">
@@ -897,7 +897,31 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/header-footer.js"></script>
-    <script src="./assets/js/admin.js"></script>
+    <script>
+        $(document).ready(function() {
+        if (localStorage.getItem("users")) {
+            window.location.href = "http://127.0.0.1:5501/data.html";
+        }
+        else{
+            var item = {
+                username : $("#username").val(),
+                password : $("#password").val()
+            };
+        }
+        $("#login-ac").click(function() {
+            item.username = $("#username").val();
+            item.password = $("#password").val();
+            
+            if (item.username == "admin" && item.password == "admin") {
+                localStorage.setItem("users",JSON.stringify(item));
+                location.href = "data.html";
+            }
+            else {
+                $(".incorrect").css("display","flex");
+            }
+        })
+})
+    </script>
 
 </body>
 </html>
