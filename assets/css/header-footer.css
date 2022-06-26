@@ -200,10 +200,9 @@
     top: 32px;
 }
 
-* header scroll show and hide */
+/* header scroll show and hide */
 /* left */
-
-.header-main-under .header-main-menu-left {
+.header-main-menu-left {
     display: none;
     align-items: center;
     margin-right: 100px;
@@ -226,8 +225,7 @@
 /* right */
 .header-main-menu-right {
     margin-left: 100px;
-    display: flex;
-    opacity: 0;
+    display: none;
 }
 
 /* header-position-fixed */
@@ -237,7 +235,7 @@
     z-index: 2;
 }
 .header-opacity {
-    opacity: 1;
+    display: flex;
 }
 
 .header-main-under .menu-button {
@@ -271,8 +269,6 @@
 }
 
 /* end header */
-
-
 
                 /* footer */
 .footer {
@@ -436,11 +432,10 @@
     align-items: center;
     justify-content: center;
     position: fixed;
-    top: 128px;
+    top: 125px;
     right: 0;
     left: 0;
     bottom: 0;
-    background: rgba(0,0,0,0.4);
     z-index: 1;
 }
 
