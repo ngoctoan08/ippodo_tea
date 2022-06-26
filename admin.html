@@ -7,7 +7,7 @@
     <title>Register </title>
     <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/1189/2976/t/37/assets/favicon.ico?v=52123416205101378421618587218">
     <link rel="stylesheet" href="./assets/css/header-footer.css">
-    <link rel="stylesheet" href="./assets/css/register.css">
+    <link rel="stylesheet" href="./assets/css/admin.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   
     <!-- <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css"> -->
@@ -444,39 +444,24 @@
     </header>
     <!-- end header -->
 
-    <!-- begin register -->
-    <div class="main-register">
-        <div class="register-container flex">
-            <h3 class="register-title text-center">Create Account</h3>
-            <a class="sign-up flex" href="https://accounts.google.com/ServiceLogin/identifier?elo=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin"> 
-                <img src="./assets/fonts/icons/google-icon.png" alt="" width="20px">
-                <span>Sign up with Google</span>
-                <!-- <span>Sign up with Google</span> -->
-            </a>
-            <a class="sign-up flex" href="https://vi-vn.facebook.com/"> 
-                <img src="./assets/fonts/icons/facebook-icon.png" alt="" width="20px">
-                <span>Sign up with Facebook</span>
-            </a>
-            <a class="sign-up flex" href="https://www.amazon.com/ap/signin?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2Flog%2Fs%3Fk%3Dlog%2Bin%26ref_%3Dnav_custrec_signin&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&">
-                <img src="./assets/fonts/icons/amazon-icon.png" alt="" width="20px">
-                <span>Sign up with Amazon</span>
-            </a>
-            <div class="register-or flex">
-                <span>OR</span>
+    <!-- begin login -->
+    <div class="main-admin">
+        <div class="admin-container flex">
+            <h3 class="admin-title">Login</h3>
+            <div class="incorrect">
+                Incorrect email or password.
             </div>
-            <form action="">
-                <input type="text" class="type-info" placeholder="First Name" required>
-                <input type="text" class="type-info" placeholder="Last Name" required>
-                <input type="tel" class="type-info" placeholder="Phone" required>
-                <input type="email" class="type-info" placeholder="Email" required>
-                <input type="password" class="type-info" placeholder="Password" required>
-                <input type="checkbox" name="" id="subcribe" required>
-                <label for="subcribe">Subscribe to our newsletter</label>
-                <input type="submit" name="" id="create-ac" value="Create">
-            </form>
+            <!-- <form action="#"> -->
+                <input type="text" id="username" class="type-info" placeholder="Username" required>
+                <input type="password" id="password" class="type-info" placeholder="Password" required>
+                <input type="checkbox" name="" id="remember">
+                <label for="remember">Remember me</label>
+                <button type="submit" name="" id="login-ac" value="Login"> Login </button>
+            <!-- </form> -->
+            <a href="#">Forgot password?</a>
         </div>
     </div>
-    <!-- end register -->
+    <!-- end login -->
     <!-- begin footer -->
     <footer>
         <div id="footer" class="footer">
@@ -912,5 +897,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/header-footer.js"></script>
+    <script src="./assets/js/admin.js"></script>
+
 </body>
 </html>
