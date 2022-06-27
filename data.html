@@ -446,15 +446,17 @@
     <div class="data-table">
         <h1 class="text-data">Information of customer</h1>
 
-        <table border="1" cellspacing = "0" cellpadding = "0">
+        <table id="data" border="1" cellspacing = "0" cellpadding = "0">
             <tr>
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Phone</th>
+                <th>Province</th>
+                <th>District</th>
+                <th>Ward</th>
                 <th>Email</th>
-                <th>Address</th>
             </tr>
-            <tr>
+            <!-- <tr>
                 <td>a</td>
                 <td>s</td>
                 <td>a</td>
@@ -467,7 +469,7 @@
                 <td>a</td>
                 <td>a</td>
                 <td>a</td>
-            </tr>
+            </tr> -->
         </table>
     </div>
 
@@ -910,6 +912,11 @@
         if (!localStorage.getItem("users")) {
             location.href = "admin.html"
         }
+    </script>
+    <script src="./assets/js/get-data.js"></script>
+    <script>
+        // displayData();
+        setInterval(displayData,1000);
     </script>
 </body>
 </html>

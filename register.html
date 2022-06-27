@@ -468,17 +468,33 @@
             <div class="register-or flex">
                 <span>OR</span>
             </div>
-            <form action="">
-                <input type="text" class="type-info" placeholder="First Name" required>
-                <input type="text" class="type-info" placeholder="Last Name" required>
-                <input type="tel" class="type-info" placeholder="Phone" required>
-                <input type="email" class="type-info" placeholder="Email" required>
+
+            <div class="incorrect">
+                Register Error.
+            </div>
+            <form action="" method="">
+                <input type="text" class="type-info" id="firstname" placeholder="First Name" required>
+                <input type="text" class="type-info" id="lastname" placeholder="Last Name" required>
+                <input type="tel" class="type-info" id="tel" placeholder="Phone" required>
+                <div class="container-api flex">
+                    <select name="" id="province" required>
+                    </select>
+                    <select name="" id="district" required>
+                        <option  value="">Chọn quận</option>
+                    </select>
+                    <select name="" id="ward" required>
+                        <option   value="">Chọn phường</option>
+                    </select>
+                </div>
+                <input type="email" class="type-info" id="email" placeholder="Email" required>
                 <input type="password" class="type-info" placeholder="Password" required>
                 <input type="checkbox" name="" id="subcribe" required>
                 <label for="subcribe">Subscribe to our newsletter</label>
                 <input type="submit" name="" id="create-ac" value="Create">
             </form>
         </div>
+
+        
     </div>
     <!-- end register -->
     <!-- begin footer -->
@@ -915,6 +931,65 @@
     <!-- end account -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js" integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./assets/js/header-footer.js"></script>
+    <script>
+        // 1. what is API
+        // 2. How do I call API
+        // 3. Explain code
+        const host = "https://provinces.open-api.vn/api/";
+        var callAPI = (api) => {
+            return axios.get(api)
+                .then((response) => {
+                    renderData(response.data, "province");
+                });
+        }
+        callAPI('https://provinces.open-api.vn/api/?depth=1');
+        var callApiDistrict = (api) => {
+            return axios.get(api)
+                .then((response) => {
+                    renderData(response.data.districts, "district");
+                });
+        }
+        var callApiWard = (api) => {
+            return axios.get(api)
+                .then((response) => {
+                    renderData(response.data.wards, "ward");
+                });
+        }
+
+        var renderData = (array, select) => {
+            let row = ' <option disable value="">chọn</option>';
+            array.forEach(element => {
+                row += `<option value="${element.code}">${element.name}</option>`
+            });
+            document.querySelector("#" + select).innerHTML = row
+        }
+
+        $("#province").change(() => {
+            callApiDistrict(host + "p/" + $("#province").val() + "?depth=2");
+            printResult();
+        });
+        $("#district").change(() => {
+            callApiWard(host + "d/" + $("#district").val() + "?depth=2");
+            printResult();
+        });
+        $("#ward").change(() => {
+            printResult();
+        })
+
+        var printResult = () => {
+            if ($("#district").val() != "" && $("#province").val() != "" &&
+                $("#ward").val() != "") {
+                let result = $("#province option:selected").text() +
+                    " | " + $("#district option:selected").text() + " | " +
+                    $("#ward option:selected").text();
+                $("#result").text(result)
+            }
+        }
+
+        // form validate
+    </script>
+    <script src="./assets/js/get-data.js"></script>
 </body>
 </html>

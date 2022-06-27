@@ -95,6 +95,15 @@
     background-color: #000000;
 }
 
+.register-container .incorrect {
+    display: none;
+    border: 1px solid #e55f5f;
+    background: #ffdfdf;
+    border-radius: 6px;
+    margin: 15px 0;
+    padding: 15px;
+}
+
 .register-container .type-info {
     display: block;
     width: 100%;
@@ -104,6 +113,18 @@
     outline: none;
     background-color: #eee;
     margin: 15px 0;
+}
+
+.register-container .container-api {
+    justify-content: space-between;
+}
+
+.register-container #province,
+.register-container #district,
+.register-container #ward {
+    width: 32%;
+    border-radius: 10px;
+    padding: 11px 6px;
 }
 
 .register-container #create-ac {
@@ -125,3 +146,11 @@
     cursor: pointer;
 }
 
+.register-successful {
+    display: none;
+    border: 1px solid #e55f5f;
+    background: #ffdfdf;
+    border-radius: 6px;
+    margin: 15px 0;
+    padding: 15px;
+}

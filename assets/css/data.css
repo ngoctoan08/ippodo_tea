@@ -4,20 +4,29 @@
     margin-top: 50px;
     margin-bottom: 200px;  
 }
+
+#data {
+    width: 100%;
+}
+
 .text-data {
     margin-bottom: 20px;
 }
+
 table {
     border-color: #9d9d9d ;
 }
+
 th, td {
     height: 50px;
+    width: 16%;
     padding: 20px;
-    padding-left: 10px;
-    padding-right: 100px;
+    /* padding-left: 10px; */
+    /* padding-right: 100px; */
     text-align: center;
     align-items: center;
 }
+
 th {
     background-color: rgb(163, 164, 164);
 }

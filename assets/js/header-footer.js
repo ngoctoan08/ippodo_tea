@@ -70,23 +70,23 @@ $(window).scroll(function() {
 
         // var htmlData = '';
         // for (var i = 0; i< product.length; i++) {
-        //     htmlData += `<div class="product-card">\
-        //             <a href="product.html" class="product-img">\
-        //                 <div class="product-new">\
-        //                     NEW\
-        //                 </div>\
-        //                 <img src="http://127.0.0.1:5501/images/products/${product[i][2]}" alt="product_${i}" width="120" height="120">\
-        //             </a>\
-        //             <div class="product-info">\
-        //                 <a class="product-title" href="#">Sayaka - 40g</a>\
-        //                 <p class="product-subtitle"> Rich &amp; Smooth </p>\
-        //                 <p class="product-price">1000</p>\
-        //                 <a class="product-order" href="#">\
-        //                     <i class="ti-shopping-cart-full"></i>\
-        //                     Pre Order\
-        //                 </a>\
-        //             </div>\
-        //         </div>`;
+            // htmlData += `<div class="product-card">\
+            //         <a href="product.html" class="product-img">\
+            //             <div class="product-new">\
+            //                 NEW\
+            //             </div>\
+            //             <img src="http://127.0.0.1:5501/images/products/${product[i][2]}" alt="product_${i}" width="120" height="120">\
+            //         </a>\
+            //         <div class="product-info">\
+            //             <a class="product-title" href="#">Sayaka - 40g</a>\
+            //             <p class="product-subtitle"> Rich &amp; Smooth </p>\
+            //             <p class="product-price">1000</p>\
+            //             <a class="product-order" href="#">\
+            //                 <i class="ti-shopping-cart-full"></i>\
+            //                 Pre Order\
+            //             </a>\
+            //         </div>\
+            //     </div>`;
         //         console.log(htmlData);
         // }
         // $('.feature-items').html(htmlData);
